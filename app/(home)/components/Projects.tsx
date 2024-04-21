@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiClerk, SiCloudinary, SiNextdotjs, SiPayloadcms, SiReact, SiShadcnui, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { SiClerk, SiCloudinary, SiNextdotjs, SiPayloadcms, SiReact, SiShadcnui, SiStripe, SiTailwindcss, SiTypescript } from 'react-icons/si';
 import Title from './Title';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
@@ -38,20 +38,20 @@ const Projects = () => {
     ];
 
     return (
-        <div className="py-10 px-5 sm:px-0"> 
-            <Title text="Projects 🎨" className="flex flex-col items-center justify-center" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5"> 
+        <div className="py-10 p-5 sm:p-0">
+            <Title text="Projects 🎨" className="flex flex-col items-center justify-center rotate-6" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5">
                 {projects.map((project, index) => {
                     const { link, title, tech, cover, background } = project;
                     return (
                         <Link href={link} key={index}>
-                            <div className={cn('p-5 rounded-md min-h-full', background)}> 
-                                <DirectionAwareHover imageUrl={cover} className="w-full h-full space-y-5 cursor-pointer"> 
-                                    <div className="flex flex-col justify-between h-full"> 
+                            <div className={cn('p-5 rounded-md', background)}>
+                                <DirectionAwareHover imageUrl={cover} className="w-full space-y-5 cursor-pointer">
+                                    <div className="space-y-5">
                                         <h1 className="text-2xl font-bold">{title}</h1>
                                         <div className="flex gap-5">
                                             {tech.map((Icon, iconIndex) => (
-                                                <Icon className="w-8 h-8" key={iconIndex} />
+                                                <Icon className="w-8 h-8" key={iconIndex} /> // Ensure consistent icon sizes
                                             ))}
                                         </div>
                                     </div>
