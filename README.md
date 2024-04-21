@@ -10,7 +10,7 @@
 
 ### 🏠 [Homepage](https://github.com/ShayneDoan/personal_portfolio)
 
-### ✨ [Demo](personal-portfolio-mocha-eight.vercel.app/)
+### ✨ [Demo](https://personal-portfolio-mocha-eight.vercel.app/)
 
 ## Install
 
