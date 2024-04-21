@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://localhost:3000"), //CHANGE
+	metadataBase: new URL("https://personal-portfolio-mocha-eight.vercel.app/"), //CHANGE
 
 	title: "Shayaan Sufi",
 	authors: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 		title: "Shayaan Sufi",
 		description:
 			"I'm a full-stack developer, currently studying Computer Engineering at the University of Waterloo.",
-		url: "https://localhost:3000", //CHANGE
+		url: "https://personal-portfolio-mocha-eight.vercel.app/", //CHANGE
 		siteName: "Shayaan Sufi",
 		images: "/og.png", //CHANGE
 		type: "website",
