@@ -39,7 +39,7 @@ const Projects = () => {
 
     return (
         <div className="py-10 px-5 sm:px-0"> 
-            <Title text="Projects 🎨" className="flex flex-col items-center justify-center rotate-6" />
+            <Title text="Projects 🎨" className="flex flex-col items-center justify-center" />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5"> 
                 {projects.map((project, index) => {
                     const { link, title, tech, cover, background } = project;
