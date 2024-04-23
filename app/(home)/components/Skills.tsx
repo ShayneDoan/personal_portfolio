@@ -2,30 +2,30 @@
 import React from 'react'
 import Title from './Title'
 import { CardHoverEffect } from '@/components/ui/CardHoverEffect'
-import { SiJavascript, SiNextdotjs, SiReact, SiTailwindcss } from 'react-icons/si'
+import { SiCplusplus, SiJavascript, SiNodedotjs, SiReact, SiTailwindcss } from 'react-icons/si'
 import { DiJava } from 'react-icons/di'
 
 const Skills = () => {
     const skills = [
         {
-            text: "React",
-            Icon: SiReact,
-        },
-        {
             text: "Javascript",
             Icon: SiJavascript,
+        },
+        {
+            text: "React",
+            Icon: SiReact,
         },
         {
             text: "Tailwind",
             Icon: SiTailwindcss,
         },
         {
-            text: "Next.js",
-            Icon: SiNextdotjs,
+            text: "Node.js",
+            Icon: SiNodedotjs,
         },
         {
-            text: "Next.js",
-            Icon: SiNextdotjs,
+            text: "C++",
+            Icon: SiCplusplus,
         },
         {
             text: "Java",

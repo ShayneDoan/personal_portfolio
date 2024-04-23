@@ -1,3 +1,4 @@
+import { MovingBorderBtn } from '@/components/ui/MovingBorder';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import React from 'react'
@@ -38,6 +39,9 @@ const Navbar = ({ className }: { className?: string }) => {
                     </Link>
                    )
                 })}
+                <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold">
+                    <Link href="https://google.com">Open for Work</Link>
+                </MovingBorderBtn>
             </div>
         </nav>
     )
